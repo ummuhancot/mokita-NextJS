@@ -3,8 +3,12 @@ import React from 'react'
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <TurkishLiterature/>
+    <div
+      style={{ display: "flex", 
+        flexDirection: "column",
+        alignItems: "center" }}
+    >
+      <TurkishLiterature />
       {children}
     </div>
   );

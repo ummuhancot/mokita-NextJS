@@ -6,12 +6,14 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg" >
-      <Container>
-        <Navbar.Brand href="/">MOKİTA'S WORLD</Navbar.Brand>
+    <Navbar bg="light" expand="lg">
+      <Container className="navbaritem">
+        <Navbar.Brand href="/" className="headerfont">
+          MOKİTA'S WORLD
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto headerrr">
             {menuItems.map((item) => (
               <Nav.Link key={item.id} href={item.url}>
                 {item.title}

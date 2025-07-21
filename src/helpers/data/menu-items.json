@@ -1,7 +1,7 @@
 [
-  { "id": 1, "title": "philosophy", "url": "/philosophy", "prefetch": true },
-  { "id": 2, "title": "poem", "url": "/poem", "prefetch": true },
-  { "id": 3, "title": "science-fiction", "url": "/science-fiction", "prefetch": true },
-  { "id": 4, "title": "turkish-literature", "url": "/turkish-literature", "prefetch": true },
-  { "id": 5, "title": "world-literature", "url": "/world-literature", "prefetch": true }
+  { "id": 1, "title": "Philosophy", "url": "/philosophy", "prefetch": true },
+  { "id": 2, "title": "Poem", "url": "/poem", "prefetch": true },
+  { "id": 3, "title": "Science Fiction", "url": "/science-fiction", "prefetch": true },
+  { "id": 4, "title": "Turkish Literature", "url": "/turkish-literature", "prefetch": true },
+  { "id": 5, "title": "World Literature", "url": "/world-literature", "prefetch": true }
 ]

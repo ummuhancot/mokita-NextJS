@@ -1,5 +1,6 @@
 import "../styles/global.scss";
-
+import "../helpers/font";
+import { emilysCandy,lexend,nunito,facultyGlyphic } from "../helpers/font";
 
 
 export const metadata = {
@@ -19,10 +20,11 @@ export const metadata = {
 
 export default function RootLayout({children }) {
   return (
-    <html lang="en">
-      <body >
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${lexend.variable} ${nunito.variable} ${facultyGlyphic.variable} ${emilysCandy.variable}`}
+    >
+      <body>{children}</body>
     </html>
   );
 }

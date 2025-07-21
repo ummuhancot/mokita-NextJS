@@ -6,7 +6,10 @@ import Link from "next/link";
 
 const TurkishLiterature = () => {
   return (
-    <Row xs={1} sm={2} md={3} lg={4} className="g-4">
+    <Row xs={1} /* sm={2} */ md={2} lg={4} className="g-4" style={{display:"flex",
+      flexDirection:"row",
+      alignItems:"center"
+    }}>
       {turkish.map((book) => (
         <Col key={book.id}>
           <Link

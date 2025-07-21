@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { TbArrowBigLeftLinesFilled } from "react-icons/tb";
 import turkish from "@/helpers/data/turkish-literature.json";
 
 export default function CardTurkish({ id }) {
@@ -9,9 +10,7 @@ export default function CardTurkish({ id }) {
   if (!book) return <div>Kitap bulunamadı.</div>;
 
   return (
-    <div style={{ padding: "5rem",
-      margin:"1rem"
-    }}>
+    <div style={{ padding: "5rem", margin: "1rem" }}>
       <h1>{book.title}</h1>
       <h4 style={{ color: "gray" }}>{book.writer}</h4>
       <img
@@ -22,6 +21,7 @@ export default function CardTurkish({ id }) {
       <p style={{ marginTop: "1rem", fontSize: "1.1rem" }}>{book.text}</p>
 
       <button
+        className="comeback"
         onClick={() => router.back()}
         style={{
           marginTop: "2rem",
@@ -33,7 +33,9 @@ export default function CardTurkish({ id }) {
           cursor: "pointer",
         }}
       >
-        ← Geri Dön
+        <span className="comeback">
+          <TbArrowBigLeftLinesFilled /> Come Back
+        </span>
       </button>
     </div>
   );
