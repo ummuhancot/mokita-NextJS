@@ -1,9 +1,13 @@
+import TurkishLiterature from '@/components/turkish-literature'
 import React from 'react'
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
-    <div>Layout</div>
-  )
-}
+    <div>
+      <TurkishLiterature/>
+      {children}
+    </div>
+  );
+};
 
 export default Layout

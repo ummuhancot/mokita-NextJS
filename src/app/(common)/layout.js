@@ -7,19 +7,18 @@ import Footer from "@/components/footer";
 const Layout = ({ children }) => {
   return (
     <div>
-      <Container >
+      <Container className="mb-5 p-2" >
         <Header />
       </Container>
 
       <Container>{children}</Container>
 
       <Container
-        className="night"
+       
         style={{
           display: "flex",
-          justifyContent: "end",
+          justifyContent: "center",
           alignItems: "center",
-          height: "100vh",
         }}
       >
         <Footer />
